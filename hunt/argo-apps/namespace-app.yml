@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: namespaces
+  namespace: openshift-gitops
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/duttap06/ocp_ingress.git'
+    path: hunt/charts/namespaces
+    targetRevision: e2e
+    helm:
+      valueFiles:
+        - /hunt/charts/namespaces/values.yaml
+  destination:
+    name: in-cluster
+  syncPolicy:      
+#   automated: {}
