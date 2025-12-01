@@ -9,6 +9,8 @@ metadata:
 spec:
   syncPolicy:
     syncOptions:
+      - CreateNamespace=true
+      - managedNamespaceMetadata=true    
       - Replace=true
   project: default
   source:
