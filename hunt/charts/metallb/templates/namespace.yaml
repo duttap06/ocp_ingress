@@ -4,4 +4,5 @@ kind: Namespace
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
+    kustomize.config.k8s.io/behavior: "merge"
   name: metallb-system
