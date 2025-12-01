@@ -1,0 +1,7 @@
+metallb:
+  operator:
+    channel: 4.19.0-202511102034
+    operator_group:
+      name: metallb-system
+  pool_addresses:
+    - 10.10.0.0/16

@@ -1,0 +1,20 @@
+{{- $_ := .Values.metallb.pool_addresses | required ".Values.metallb.pool_addresses is required." -}}
+{{- if lt (len .Values.metallb.pool_addresses) 1 }}
+{{- fail "metallb.pool_addresses must have at least one address" -}}
+{{- end }}
+
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: default
+  namespace: metallb-system
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  addresses:
+{{- range .Values.metallb.pool_addresses }}
+    - {{ . }}
+{{- end }}
+  autoAssign: true
+  avoidBuggyIPs: false

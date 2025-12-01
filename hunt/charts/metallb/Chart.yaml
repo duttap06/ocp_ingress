@@ -1,0 +1,5 @@
+apiVersion: v2
+name: metallb
+description: MetalLB load balancer for OpenShift bare metal clusters
+type: application
+version: 1.0.0

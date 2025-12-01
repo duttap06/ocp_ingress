@@ -1,0 +1,7 @@
+metallb:
+  operator:
+    operator_group:
+      name: metallb-system
+    channel: ""
+    install_plan_approval: Manual
+  pool_addresses: []
