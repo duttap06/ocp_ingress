@@ -3,6 +3,8 @@
 ---
 apiVersion: v1
 kind: Namespace
+annotations: 
+  kustomize.config.k8s.io/behavior: "merge"
 metadata:
   name: {{ .name }}
 ...
