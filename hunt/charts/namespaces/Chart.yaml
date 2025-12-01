@@ -1,0 +1,5 @@
+apiVersion: v2
+name: namespaces
+description: A Helm chart for creating multiple namespaces based on values
+type: application
+version: 1.0.0

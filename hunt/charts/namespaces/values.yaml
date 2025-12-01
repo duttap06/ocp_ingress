@@ -1,0 +1,10 @@
+# List of namespaces
+namespaces:
+  - name: metallb-system
+    description: '# MetalLB Default Namespace'
+  - name: anycast-shared-gateway
+    description: '# Shared Anycast Namespace'
+  - name: app1
+    description: '# app1 will live on alpha but be accessible from both clusters'
+  - name: app2
+    description: '# app2 will live on beta but be accessible from both clusters'
