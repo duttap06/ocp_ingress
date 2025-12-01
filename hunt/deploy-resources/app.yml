@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: createResources
+  name: createresources
   namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
