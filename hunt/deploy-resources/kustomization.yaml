@@ -6,6 +6,6 @@ helmGlobals:
   chartHome: ../charts
 helmCharts:
   - name: namespaces
-    valuesFile: /deploy-resources/components/namespaces/values.yaml
+    valuesFile: components/namespaces/values.yaml
   - name: metallb
-    valuesFile: /deploy-resources/operators/metallb/values.yaml
+    valuesFile: operators/metallb/values.yaml
