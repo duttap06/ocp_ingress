@@ -5,13 +5,16 @@ metadata:
   namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-
 spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
       - managedNamespaceMetadata=true    
       - Replace=true
+      - PruneLast=true            
+    automated:
+      prune: true
+      selfHeal: true
   project: default
   source:
     repoURL: 'https://github.com/duttap06/ocp_ingress.git'
@@ -19,5 +22,3 @@ spec:
     targetRevision: e2e
   destination:
     name: in-cluster
-  syncPolicy:      
-#   automated: {}
