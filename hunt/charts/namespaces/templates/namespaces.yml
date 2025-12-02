@@ -5,7 +5,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations: 
-    kustomize.config.k8s.io/behavior: "merge"
+    kustomize.config.k8s.io/behavior: "replace"
+    argocd.argoproj.io/sync-wave: "-3"    
   name: {{ .name }}
 ...
 {{- end }}
