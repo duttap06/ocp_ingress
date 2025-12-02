@@ -3,7 +3,7 @@ apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+#    argocd.argoproj.io/sync-wave: "-1"
   name: {{ .Values.metallb.operator.operator_group.name }}
   namespace: metallb-system
 spec:
