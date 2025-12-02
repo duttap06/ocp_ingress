@@ -1,6 +1,6 @@
 metallb:
   operator:
-    channel: 4.19.0-202511102034
+    channel: stable-4.19
     operator_group:
       name: metallb-system
   pool_addresses:

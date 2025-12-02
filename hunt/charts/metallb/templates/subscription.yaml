@@ -4,7 +4,6 @@ kind: Subscription
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
-    kustomize.config.k8s.io/behavior: "replace"    
   name: metallb-operator-subscription
   namespace: metallb-system
 spec:

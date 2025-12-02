@@ -4,10 +4,10 @@
 {{- end }}
 
 ---
-apiVersion: ipaddresspools.metallb.io/v1beta1
+apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: default
+  name: ingress-mesh-ipaddress-pool
   namespace: metallb-system
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true

@@ -1,8 +1,8 @@
 ---
-apiVersion: metallbs.metallb.io/v1beta1
+apiVersion: metallb.io/v1beta1
 kind: MetalLB
 metadata:
-  name: metallb
+  name: ingress-mesh-metallb
   namespace: metallb-system
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
