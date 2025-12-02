@@ -4,7 +4,7 @@
 {{- end }}
 
 ---
-apiVersion: metallb.io/v1beta1
+apiVersion: ipaddresspools.metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
   name: default

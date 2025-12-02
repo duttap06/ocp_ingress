@@ -1,5 +1,5 @@
 ---
-apiVersion: metallb.io/v1beta1
+apiVersion: metallbs.metallb.io/v1beta1
 kind: MetalLB
 metadata:
   name: metallb
